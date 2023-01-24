@@ -1,51 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <title>
-    Kindly fill the form
-  </title>
+<html lang="en">
+  <head>
+    <title>Form</title>
+  </head>
 </html>
 
 <body>
-  <div>
-    <h1>Fill This Form</h1>
-    <form action="" id="surveyform">
-      <div id="inputs">
-        <label for="name">Name:</label>
-        <input type="name" id="name" required placeholder="Full Name">
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" name="" id="email" required placeholder="example@gmail.com">
-        <br>
-        <label for="age">Age:</label>
-        <input type="number" name="" id="age" placeholder="18">
-      </div>
+  <h1>Kindly Fill This Form</h1>
+  <form action="" id="surveyform">
+    <div id="input-fields">
+      <label for="name">Name:</label>
+      <input type="name" id="name" required placeholder="Full Name">
       <br>
-      <div>
-        <label for="">Which option best describes your current role?</label>
-        <select name="" id="">
-          <option value="Student">Student</option>
-          <option value="Develper">Develper</option>
-          <option value="None">None</option>
-        </select>
-      </div>
+      <label for="email">Email:</label>
+      <input type="email" name="" id="email" required placeholder="example@gmail.com">
       <br>
-      <div>
-        <label for="">Would you recommend this site to a friend?</label>
-        <label><input type="radio" name="opt" id="" value="1">Definitely</label>
-        <label><input type="radio" name="opt" id="" value="1">Maybe</label>
-        <label><input type="radio" name="opt" id="" value="1">Not sure</label>
-      </div>
-      <br>
-      <div>
-        <label for="">What do you like most in this website</label>
-        <select name="" id="">
-          <option value="1"></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-        </select>
-      </div>
-    </form>
-  </div>
+      <label for="age">Age:</label>
+      <input type="number" name="" id="age" placeholder="18">
+    </div>
+    <br>
+    <div>
+      <label for="">Who are you?</label>
+      <select name="role" id="role">
+        <option value="Student">Student</option>
+        <option value="Develper">Develper</option>
+        <option value="None">None</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="radio-opt">Would you recommend this page to a friend?</label>
+      <label><input type="radio" name="opt" id="radio-opt" value="1">Definitely</label>
+      <label><input type="radio" name="opt" id="radio-opt" value="1">Maybe</label>
+      <label><input type="radio" name="opt" id="radio-opt" value="1">Not sure</label>
+    </div>
+    <br>
+    <div>
+      <label for="">What do you like most in this webpage</label>
+      <select name="" id="">
+        <option value="1">Everything</option>
+        <option value="2">Nothing</option>
+        <option value="3">Something</option>
+        <option value="4">Some Nothings</option>
+        <option value="5">Every Nothings</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="feedback">Feedback:</label><br>
+      <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="your feedback...."></textarea>
+    </div>
+    <br>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
 </body>
