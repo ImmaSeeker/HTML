@@ -10,7 +10,7 @@
   <form action="" id="surveyform">
     <div id="input-fields">
       <label for="name">Name:</label>
-      <input type="name" id="name" required placeholder="Full Name">
+      <input type="text" id="name" required placeholder="Full Name">
       <br>
       <label for="email">Email:</label>
       <input type="email" name="" id="email" required placeholder="example@gmail.com">
@@ -30,9 +30,9 @@
     <br>
     <div>
       <label for="radio-opt">Would you recommend this page to a friend?</label>
-      <label><input type="radio" name="opt" id="radio-opt" value="1">Definitely</label>
-      <label><input type="radio" name="opt" id="radio-opt" value="1">Maybe</label>
-      <label><input type="radio" name="opt" id="radio-opt" value="1">Not sure</label>
+      <label><input type="radio" name="opt" id="radio-opt" value="Definitely">Definitely</label>
+      <label><input type="radio" name="opt" id="radio-opt" value="Maybe">Maybe</label>
+      <label><input type="radio" name="opt" id="radio-opt" value="Notsure">Not sure</label>
     </div>
     <br>
     <div>
@@ -52,7 +52,8 @@
     </div>
     <br>
     <div>
-      <button type="submit">Submit</button>
+      <label for="submit"></label>
+      <input type="submit" id="submit">
     </div>
   </form>
 </body>
